@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root{
+    /* TIPOGRAFIAS */
+
+    /* H1 */
+    --H1_FONT_SZ: 72px;
+    --H1_L_HEIGHT: 100%;
+    --H1_L_SPACING: 0;
+    --H1_WEIGHT: 900;
+
+    /* H2 */
+    --H2_FONT_SZ: 60px;
+    --H2_L_height: 100%;
+    --H2_L_spacing: 0;
+    --H2_WEIGHT: 700;
+
+    /* H3 */
+    --H3_FONT_SZ: 50px;
+    --H3_L_HEIGHT: 100%;
+    --H3_L_SPACING: 0;
+    --H3_WEIGHT: 600;
+
+    /* H4 */
+    --H4_FONT_SZ: 40px;
+    --H4_L_HEIGHT: 100%;
+    --H4_L_SPACING: 0;
+    --H4_WEIGHT: 600;
+
+    /* H5 */
+    --H5_FONT_SZ: 36px;
+    --H5_L_HEIGHT: 100%;
+    --H5_L_SPACING: 0;
+    --H5_WEIGHT: 500;
+
+    /* H6 */
+    --H6_FONT_SZ: 36px;
+    --H6_L_HEIGHT: 100%;
+    --H6_L_SPACING: 0;
+    --H5_WEIGHT: 500;
+
+    /* P */
+    --P_FONT_SZ: 24px;
+    --P_L_HEIGHT: 120%;
+    --P_L_SPACING: 0;
+    --P_WEIGHT: 300;
+
+    /* COLORES */
+
+    /* Blanco */
+    --BLANCO_BG: #FFF;
+    --BLANCO_FONT_COLOR: #FFF;
+
+    /* Gris */
+    --GRIS_BG: #41413D;
+    --GRIS_FONT_COLOR: #41413D;
+
+    /* Negro */
+    --NEGRO_BG: #000;
+    --NEGRO_FONT_COLOR: #000;    
+
+    /* COMPONENTES */
+
+    /* BOTONES */
+
+    /* Boton grande */
+    --BTN_L_padding: 16px 24px;
+    --BTN_L_F_SZ: 20px;
+    --BTN_L_LN_HGT: 100%;
+    --BTN_L_LTTR-SPG: 0;
+    --BTN_L_BORDER_RADIUS: 8px;
+    --BTN_L_TXT_WEIGHT: 700;
+
+    /* Boton mediano */
+    --BTN_MD_padding: 12px 20px;
+    --BTN_MD_F_SZ: 18px;
+    --BTN_MD_LN_HGT: 100%;
+    --BTN_MD_LTTR-SPG: 0;
+    --BTN_MD_BORDER_RADIUS: 8px;
+    --BTN_MD_TXT_WEIGHT: 700;
+
+    /* Boton pequenio */
+    --BTN_S_padding: 8px 16px;
+    --BTN_S_F_SZ: 16px;
+    --BTN_S_LN_HGT: 100%;
+    --BTN_S_LTTR-SPG: 0;
+    --BTN_S_BORDER_RADIUS: 8px;
+    --BTN_S_TXT_WEIGHT: 700;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 32px;
+    background-image: url(/assets/images/book.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.h1{
+    font-size: var(--H1_FONT_SZ);
+    line-height: var(--H1_L_HEIGHT);
+    letter-spacing: var(--H1_L_SPACING);
+    font-weight: var(--H1_WEIGHT);
+}
+
+.h2{
+    font-size: var(--H2_FONT_SZ);
+    line-height: var(--H2_L_HEIGHT);
+    letter-spacing: var(--H2_L_SPACING);
+    font-weight: var(--H2_WEIGHT);
+}
+
+.h3{
+    font-size: var(--H3_FONT_SZ);
+    line-height: var(--H3_L_HEIGHT);
+    letter-spacing: var(--H3_L_SPACING);
+    font-weight: var(--H3_WEIGHT);
+}
+
+.h4{
+    font-size: var(--H4_FONT_SZ);
+    line-height: var(--H4_L_HEIGHT);
+    letter-spacing: var(--H4_L_SPACING);
+    font-weight: var(--H4_WEIGHT); 
+}
+
+.h5{
+    font-size: var(--H5_FONT_SZ);
+    line-height: var(--H5_L_HEIGHT);
+    letter-spacing: var(--H5_L_SPACING);
+    font-weight: var(--H5_WEIGHT);
+}
+
+.h6{
+    font-size: var(--H6_FONT_SZ);
+    line-height: var(--H6_L_HEIGHT);
+    letter-spacing: var(--H6_L_SPACING);
+    font-weight: var(--H6_WEIGHT);
+}
+
+.P{
+    font-size: var(--P_FONT_SZ);
+    line-height: var(--P_L_HEIGHT);
+    letter-spacing: var(--P_L_SPACING);
+    font-weight: var(--P_WEIGHT);
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 32px;
+}
+
+.mini-container-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fundador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: var(--GRIS_BG);
+    height: fit-content;
+}
+
+.container-fundador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundador-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
