@@ -8,6 +8,8 @@
 
 html{
     scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
 }
 
 /* Variables */
@@ -49,7 +51,7 @@ html{
     --H6_FONT_SZ: 36px;
     --H6_L_HEIGHT: 100%;
     --H6_L_SPACING: 0;
-    --H5_WEIGHT: 500;
+    --H6_WEIGHT: 500;
 
     /* P */
     --P_FONT_SZ: 24px;
@@ -99,6 +101,7 @@ html{
     --BTN_S_BORDER_RADIUS: 8px;
     --BTN_S_TXT_WEIGHT: 700;
 }
+
 
 .hero{
     display: flex;
@@ -202,7 +205,7 @@ html{
     justify-content: center;
     align-items: start;
     gap: 24px;
-}
+} 
 
 .tecnicos{
     display: flex;
@@ -228,4 +231,139 @@ html{
     padding: 16px 32px;
     gap: 24px;
     background-color: var(--GRIS_BG);
+}
+
+.historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: var(--BLANCO_BG);
+    height: fit-content;
+}
+
+.container-historia{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+}
+
+.historia-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 24px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--GRIS_BG);
+    height: fit-content;
+    padding: 16px 32px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-formulario{
+    width: 80%;
+}
+
+@media (max-width: 992px) {
+
+    #navbarSupportedContent{
+        display: block;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+ 
+}
+
+@media (max-width: 576px) {
+
+    #navbarSupportedContent{
+        display: none;
+    }
+ 
+    .navbar-toggler{
+        display: block;
+    }
+
+}
+
+@media (max-width: 1040px){
+
+    .container-tecnicos, .mini-container-cards{
+        justify-content: center;
+    }
+    .container-fundador, .container-historia{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .historia-info, .fundador-info{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero h6, .fundador h3, .historia h3{
+        font-size: var(--P_FONT_SZ);
+        letter-spacing: var(--P_L_SPACING);
+        line-height: var(--P_L_HEIGHT);
+        font-weight: var(--P_WEIGHT);
+    }
+
+    .container-cards h3, .fundador h6,.container-cards h6, .tecnicos h3, .historia h6, .hero h1{
+        font-size: var(--H6_FONT_SZ);
+        letter-spacing: var(--H6_L_SPACING);
+        line-height: var(--H6_L_HEIGHT);
+        font-weight: var(--H6_WEIGHT);
+    }
+
+    .carrera h3{
+        font-size: var(--P_FONT_SZ);
+        letter-spacing: var(--P_L_SPACING);
+        line-height: var(--P_L_HEIGHT);
+        font-weight: var(--P_WEIGHT);
+    }
+
+    .fundador-foto, .historia-foto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fundador-foto img, .historia-foto img{
+        width: 70vw;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .hero, .container-cards, .fundador, .tecnicos, .carrera, .historia, .footer{
+        padding: 8px 16px;
+    }
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="../bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script
+    href="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"
+    rel="stylesheet"></script>
+    <link rel="shortcut icon" href="../assets/images/LOGO.png" type="image/x-icon">
+    <title>UOA</title>
+</head>
+<body>
+    <div class="formulario">
+        <form class="container-formulario">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Teléfono</label>
+                <input type="tel" class="form-control" id="inputPassword4" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Santiago de los...">
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">Cuidad</label>
+              <select id="inputCity" class="form-control">
+                <option selected>Elegir...</option>
+                <option>Santo Domingo</option>
+                <option>Santiago</option>
+                <option>La Vega</option>
+                <option>Puerto Plata</option>
+                <option>La Romana</option>
+                <option>Punta Cana/Bávaro</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Elegir...</option>
+                <option>San Pedro de Macorís</option>
+                <option>Peravia</option>
+                <option>El Seibo</option>
+                <option>Hermanas Mirabal</option>
+                <option>Espaillat</option>
+                <option>Hato Mayor</option>
+                <option>Duarte</option>
+                <option>Bahoruco</option>
+                <option>Azua</option>
+                <option>Distrito Nacional</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Código postal</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Doy consentimiento para el uso de mi información
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="Enviar">Enviar</button>
+          <script>
+            document.getElementById('Enviar').addEventListener('click', function() {
+                alert('¡Los datos se han enviado de manera correcta!');
+            });
+            </script>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="iconos">
+          <a href="#"><img src="../assets/images/logofooter.png" alt="UOA logo" width="28" height="28" title="UOA logo"></a>          
+          <a href="#"><img src="../assets/images/fbfooter.png" alt="facebook" width="28" height="28" title="facebook"></a>        <a href="#"><img src="../assets/images/insfooter.png" alt="instagram" width="28" height="28" title="instagram"></a>
+        </div>
+        <p class="pi">&copy;UOA. Derechos Reservados.</p>
+    </footer>
+</body>
+</html>
