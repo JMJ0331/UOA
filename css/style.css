@@ -110,7 +110,7 @@ html{
     align-items: center;
     text-align: center;
     padding: 16px 32px;
-    background-image: url(assets/images/book.png);
+    background-image: url(/assets/images/book.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
