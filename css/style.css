@@ -115,49 +115,49 @@ html{
     width: 100%;
 }
 
-.h1{
+.eich1{
     font-size: var(--H1_FONT_SZ);
     line-height: var(--H1_L_HEIGHT);
     letter-spacing: var(--H1_L_SPACING);
     font-weight: var(--H1_WEIGHT);
 }
 
-.h2{
+.eich2{
     font-size: var(--H2_FONT_SZ);
     line-height: var(--H2_L_HEIGHT);
     letter-spacing: var(--H2_L_SPACING);
     font-weight: var(--H2_WEIGHT);
 }
 
-.h3{
+.eich3{
     font-size: var(--H3_FONT_SZ);
     line-height: var(--H3_L_HEIGHT);
     letter-spacing: var(--H3_L_SPACING);
     font-weight: var(--H3_WEIGHT);
 }
 
-.h4{
+.eich4{
     font-size: var(--H4_FONT_SZ);
     line-height: var(--H4_L_HEIGHT);
     letter-spacing: var(--H4_L_SPACING);
     font-weight: var(--H4_WEIGHT); 
 }
 
-.h5{
+.eich5{
     font-size: var(--H5_FONT_SZ);
     line-height: var(--H5_L_HEIGHT);
     letter-spacing: var(--H5_L_SPACING);
     font-weight: var(--H5_WEIGHT);
 }
 
-.h6{
+.eich6{
     font-size: var(--H6_FONT_SZ);
     line-height: var(--H6_L_HEIGHT);
     letter-spacing: var(--H6_L_SPACING);
     font-weight: var(--H6_WEIGHT);
 }
 
-.P{
+.pi{
     font-size: var(--P_FONT_SZ);
     line-height: var(--P_L_HEIGHT);
     letter-spacing: var(--P_L_SPACING);
@@ -177,8 +177,7 @@ html{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
+    gap: 14px;
 }
 
 .fundador{
@@ -217,7 +216,16 @@ html{
 
 .container-tecnicos{
     display: flex;
-    justify-content: space-evenly;
-    columns: 3;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.carrera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 24px;
+    background-color: var(--GRIS_BG);
 }
