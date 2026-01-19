@@ -277,41 +277,33 @@ html{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 16px
 }
 
-.container-formulario{
-    width: 80%;
+.navbar-collapse{
+    flex-grow: 0 !important;
 }
 
-@media (max-width: 992px) {
+#inscription-prueba{
+    display: none;
+}
 
-    #navbarSupportedContent{
-        display: block;
-    }
+@media (max-width: 768px){
 
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .navbar-toggler{
+    #inscription{
         display: none;
     }
- 
-}
 
-@media (max-width: 576px) {
-
-    #navbarSupportedContent{
-        display: none;
-    }
- 
-    .navbar-toggler{
-        display: block;
+    #inscription-prueba{
+        display: inline;
     }
 
+
+
 }
+
+
+
 
 @media (max-width: 1040px){
 
